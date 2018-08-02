@@ -1,14 +1,19 @@
 package j08;
-
-/**
- *
- * @author user
- */
+import java.util.Scanner;
 public class Contoh02 {
-    public static void main(String[] args) {
-        {
-            int x;
-            for(x = 1; x <= 10; x++)
+    public static void main(String[] args) 
+       {
+           Scanner baca = new Scanner(System.in);
+           
+           int x;
+           int y;
+           
+           System.out.print("Silahkan Masukkan bilangan");
+           y = baca.nextInt();
+           
+            // FOR
+            for(x = 1; x <= y; x++)
+                
             {
                 System.out.print(x + " ");
             }
@@ -27,11 +32,11 @@ public class Contoh02 {
                 System.out.print(x + " ");
                 x++;
             }
-            while (x <= 11);
+            while (x <= 10);
            
         }
     }
-}
+
     
     
     
